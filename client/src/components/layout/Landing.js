@@ -24,6 +24,10 @@ const Landing = ({ isAuthenticated }) => {
             </Link>
           </div>
         </div>
+        <div className="footer">
+          ookokok
+        </div>
+
       </div>
     </section>
   );

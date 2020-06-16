@@ -124,6 +124,7 @@ img {
 .my-2 {
   margin: 2rem 0;
 }
+
 .my-3 {
   margin: 3rem 0;
 }
@@ -625,4 +626,9 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+}
+
+.footer {
+  background-color: red;
+  height: 15vh;
 }
