@@ -25,9 +25,61 @@ const Landing = ({ isAuthenticated }) => {
           </div>
         </div>
         <div className="footer">
-          ookokok
+          <div class="footer__logo-box">
+            <img
+              src="../../img/ubt-logo.png"
+              alt="Full logo"
+              class="footer__logo"
+            />
+          </div>
+          <div class="row">
+            <div class="col-1-of-2">
+              <div class="footer__navigation">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Company
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Contact us
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Careers
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Privacy
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1-of-2">
+              <p class="footer__copyright">
+                Built by{" "}
+                <a
+                  href="https://www.ubt-uni.net/sq/ballina/"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  Univeristy for Business and Technology
+                </a>{" "}
+                students for Lab Course 2 course. Copyright &copy; by UBT
+                Students and their mentors.
+              </p>
+            </div>
+          </div>
         </div>
-
       </div>
     </section>
   );

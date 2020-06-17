@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -61,7 +61,7 @@ img {
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  animation: moveInRight 1.3s ease-out
+  animation: moveInRight 1.3s ease-out;
 }
 
 .text-center {
@@ -140,11 +140,11 @@ img {
   margin-right: 2rem;
   transition: opacity 0.2s ease-in;
   outline: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn-animation {
-  animation: moveInButton .5s ease-out .75s;
+  animation: moveInButton 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
 
@@ -297,10 +297,10 @@ img {
   color: #888;
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
 .form select,
 .form textarea {
   display: block;
@@ -310,7 +310,7 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type='submit'],
+.form input[type="submit"],
 button {
   font: inherit;
 }
@@ -385,7 +385,7 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('img/showcase.jpg') no-repeat center center/cover;
+  background: url("img/showcase.jpg") no-repeat center center/cover;
   height: 100vh;
 }
 
@@ -416,10 +416,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
   grid-gap: 1rem;
 }
 
@@ -602,11 +602,11 @@ button {
 
   .profile-grid {
     grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
   }
 
   .profile-about .skills {
@@ -628,7 +628,115 @@ button {
   }
 }
 
+/*Footer*/
 .footer {
-  background-color: red;
-  height: 15vh;
+  background-color: rgb(61, 61, 61);
+  /* height: 20vh; */
+  padding: 5rem 0;
+}
+
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.footer__logo {
+  width: 12rem;
+  height: auto;
+}
+
+.footer__navigation {
+  border-top: 1px solid rgb(255, 255, 255);
+  padding-top: 1.2rem;
+  display: inline-block;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 0.9rem;
+}
+
+.footer__copyright {
+  border-top: 1px solid rgb(255, 255, 255);
+  padding-top: 1.2rem;
+  float: right;
+  width: 80%;
+  color: white;
+}
+
+@media (max-width: 56.25rem) {
+  .footer__copyright {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__navigation {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.row {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 5rem;
+}
+@media (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row {
+    max-width: 35rem;
+    padding: 0 1.8rem;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^="col-"] {
+  float: left;
+}
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 3.75rem;
+}
+@media (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+.row .col-1-of-2 {
+  width: calc((100% - 3.75rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 3.75rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 3.75rem) / 3) + 3.75rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 3.75rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 3.75rem) / 4) + 3.75rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 3.75rem) / 4) + 2 * 3.75rem);
 }
