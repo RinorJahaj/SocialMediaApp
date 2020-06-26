@@ -71,6 +71,7 @@ const Landing = ({ isAuthenticated }) => {
                   href="https://www.ubt-uni.net/sq/ballina/"
                   class="footer__link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Univeristy for Business and Technology
                 </a>{" "}
