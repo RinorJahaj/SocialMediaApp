@@ -632,12 +632,17 @@ button {
 .footer {
   background-color: rgb(61, 61, 61);
   /* height: 20vh; */
-  padding: 5rem 0;
+  padding: 3.5rem 0;
 }
 
 .footer__logo-box {
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.myLogo {
+  color: #fff;
+  font-size: 8rem;
 }
 
 .footer__logo {

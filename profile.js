@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const auth = requrie("../../middleware/auth");
 
-const Profile = requrie("../../models/PRofile");
-const User = require("../../model/User");
+const Profile = requrie("../../services/Profile");
+const User = require("../../services/User");
 
 // @route   GET api/profile/me
 // @desc    Get current user profile

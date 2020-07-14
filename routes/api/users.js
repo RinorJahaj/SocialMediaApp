@@ -8,7 +8,7 @@ const { check, validationResult } = require("express-validator");
 //First error me kqyr a e ki check
 
 // User model
-const User = require("../../models/User");
+const User = require("../../services/User");
 
 // @route   POST api/users
 // @desc    Register user

@@ -35,6 +35,7 @@ export const Login = ({ login, isAuthenticated }) => {
         <div className="form-group">
           <input
             type="email"
+            id="email"
             placeholder="Email Address"
             name="email"
             value={email}

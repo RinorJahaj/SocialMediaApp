@@ -26,11 +26,12 @@ const Landing = ({ isAuthenticated }) => {
         </div>
         <div className="footer">
           <div class="footer__logo-box">
-            <img
+            {/* <img
               src="../../img/ubt-logo.png"
               alt="Full logo"
               class="footer__logo"
-            />
+            /> */}
+            <i class="fas fa-university myLogo"></i>
           </div>
           <div class="row">
             <div class="col-1-of-2">
