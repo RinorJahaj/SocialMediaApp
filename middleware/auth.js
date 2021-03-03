@@ -1,3 +1,5 @@
+//send token back, to access protected routes
+// auth te qdo API arguemnt per me ba qat metod protected
 const jwt = require("jsonwebtoken");
 const config = require("config");
 

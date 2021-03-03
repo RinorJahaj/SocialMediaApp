@@ -9,7 +9,8 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_PROFILE
+  CLEAR_PROFILE,
+  POST_ERROR
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 
@@ -32,6 +33,7 @@ export const loadUser = () => async (dispatch) => {
     });
   }
 };
+
 
 //Register user:
 export const register = ({ name, email, password }) => async (dispatch) => {
@@ -64,6 +66,8 @@ export const register = ({ name, email, password }) => async (dispatch) => {
     });
   }
 };
+
+
 
 //Login user:
 export const login = (email, password) => async (dispatch) => {

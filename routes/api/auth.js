@@ -11,7 +11,6 @@ const User = require("../../services/User");
 // @route   GET api/auth
 // @desc    Test route
 // @access  Public
-
 router.get("/", auth, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
@@ -22,10 +21,10 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
+
 // @route   POST api/auth
 // @desc    Authenticate user & get token
 // @access  Public
-
 router.post(
   "/",
   [

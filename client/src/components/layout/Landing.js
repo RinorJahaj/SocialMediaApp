@@ -3,6 +3,8 @@ import { Link, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
+import ubtLogo from "../../img/ubt-logo.png";
+
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
     return <Redirect to="/dashboard" />;
@@ -11,7 +13,7 @@ const Landing = ({ isAuthenticated }) => {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">We The Developers</h1>
+          <h1 className="x-large landing-h1">We The Developers</h1>
           <p className="lead">
             Meet new people, who share the same passion as you do!
           </p>
@@ -26,51 +28,50 @@ const Landing = ({ isAuthenticated }) => {
         </div>
         <div className="footer">
           <div class="footer__logo-box">
-            {/* <img
-              src="../../img/ubt-logo.png"
+            <img
+              src={ubtLogo}
               alt="Full logo"
               class="footer__logo"
-            /> */}
-            <i class="fas fa-university myLogo"></i>
+            />
           </div>
-          <div class="row">
-            <div class="col-1-of-2">
-              <div class="footer__navigation">
-                <ul class="footer__list">
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
+          <div className="row">
+            <div className="col-1-of-2">
+              <div className="footer__navigation">
+                <ul className="footer__list">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Company
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Contact us
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Careers
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Privacy
                     </a>
                   </li>
-                  <li class="footer__item">
-                    <a href="#" class="footer__link">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
                       Terms
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-1-of-2">
-              <p class="footer__copyright">
+            <div className="col-1-of-2">
+              <p className="footer__copyright">
                 Built by{" "}
                 <a
                   href="https://www.ubt-uni.net/sq/ballina/"
-                  class="footer__link"
+                  className="footer__link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

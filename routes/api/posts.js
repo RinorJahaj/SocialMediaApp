@@ -10,7 +10,6 @@ const User = require("../../services/User");
 // @route   GET api/posts
 // @desc    Create a post
 // @access  Private
-
 router.post(
   "/",
   [auth, [check("text", "Text is required").not().isEmpty()]],
@@ -39,10 +38,10 @@ router.post(
   }
 );
 
+
 // @route   GET api/posts
 // @desc    Get all posts
 // @access  Private
-
 router.get("/", auth, async (req, res) => {
   try {
     const posts = await Post.find().sort({ date: -1 });
@@ -53,10 +52,10 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
+
 // @route   GET api/posts/:id
 // @desc    Get post by ID
 // @access  Private
-
 router.get("/:id", auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
@@ -75,10 +74,11 @@ router.get("/:id", auth, async (req, res) => {
   }
 });
 
+
+
 // @route   Delete api/posts/:id
 // @desc    Delete a post
 // @access  Private
-
 router.delete("/:id", auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
@@ -104,6 +104,7 @@ router.delete("/:id", auth, async (req, res) => {
   }
 });
 
+
 // @route   Put api/posts/like/:id
 // @desc    Like a post
 // @access  Private
@@ -128,6 +129,7 @@ router.put("/like/:id", auth, async (req, res) => {
     res.status(500).send("Server Error!");
   }
 });
+
 
 // @route   Put api/posts/unlike/:id
 // @desc    Unike a post
@@ -159,6 +161,7 @@ router.put("/unlike/:id", auth, async (req, res) => {
     res.status(500).send("Server Error!");
   }
 });
+
 
 // @route   POST api/posts/comment/:id
 // @desc    Comment on a post
@@ -194,6 +197,7 @@ router.post(
     }
   }
 );
+
 
 // @route   Delete api/posts/comment/:id/:comment__id
 // @desc    Delete a comment

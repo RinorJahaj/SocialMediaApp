@@ -29,6 +29,8 @@ export const getPosts = () => async (dispatch) => {
   }
 };
 
+
+
 // Add likes:
 export const addLike = (id) => async (dispatch) => {
   try {
@@ -46,6 +48,8 @@ export const addLike = (id) => async (dispatch) => {
   }
 };
 
+
+
 // Remove likes:
 export const removeLike = (id) => async (dispatch) => {
   try {
@@ -62,6 +66,8 @@ export const removeLike = (id) => async (dispatch) => {
     });
   }
 };
+
+
 
 // Delete post:
 export const deletePost = (id) => async (dispatch) => {
@@ -107,6 +113,7 @@ export const addPost = (formData) => async (dispatch) => {
   }
 };
 
+
 //Get Post
 export const getPost = (id) => async (dispatch) => {
   try {
@@ -123,6 +130,7 @@ export const getPost = (id) => async (dispatch) => {
     });
   }
 };
+
 
 // Add Comment
 export const addComment = (postId, formData) => async (dispatch) => {
@@ -171,3 +179,4 @@ export const deleteComment = (postId, commentId) => async (dispatch) => {
     });
   }
 };
+
